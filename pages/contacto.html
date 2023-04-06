@@ -44,74 +44,84 @@
     </header>
 
     <main>
-        <h2>Contacto y Ubicación</h2>
+        <section class="contacto container">
+            <div class="row">
+                <h2>Contacto y Ubicación</h2>
+                <div class="formulario-contacto col-12 col-md-6">
+                    <form action="acept">
 
-        <form action="">
-            <h3>Dejanos tu consulta</h3>
+                        <h3>Dejanos tu consulta</h3>
 
-            <div>
-                <label for="nombre-usuario"></label>
-                <input id="nombre-usuario" type="text" placeholder="Nombre*">
+                        <div>
+                            <label for="nombre-usuario"></label>
+                            <input id="nombre-usuario" type="text" placeholder="Nombre*">
+                        </div>
+
+                        <div>
+                            <label for="apellido-usuario"></label>
+                            <input id="apellido-usuario" type="text" placeholder="Apellido*">
+                        </div>
+
+                        <div>
+                            <label for="email"></label>
+                            <input id="email" type="email" placeholder="Correo electrónico*">
+                        </div>
+
+                        <div>
+                            <label for="celular"></label>
+                            <input type="celular" type="number" placeholder="Celular*">
+                        </div>
+
+                        <div>
+                            <label for="foto-referencia"></label>
+                            <input type="foto-referencia" placeholder="Foto referencia">
+                            <input type="submit" value="Examinar">
+                        </div>
+
+                        <div>
+                            <label for="foto-zona-cuerpo"></label>
+                            <input type="foto-zona-cuerpo" placeholder="Foto zona del cuerpo">
+                            <input type="submit" value="Examinar">
+                        </div>
+
+                        <div>
+                            <label for="comentarios"></label>
+                            <textarea name="" id="" cols="30" rows="10"
+                                placeholder="Idea del tatuaje | Medidas de la zona a tatuar en cm"></textarea>
+                        </div>
+
+                        <div>
+                            <input type="submit" value="Enviar">
+                            <input type="submit" value="Limpiar datos">
+                        </div>
+                </div>
+                </form>
+                <figure class="img-neon col-12 col-md-6">
+                    <img src="../img/tattoo-cartel.jpg" alt="cartel tattoo neon">
+                </figure>
             </div>
-
-            <div>
-                <label for="apellido-usuario"></label>
-                <input id="apellido-usuario" type="text" placeholder="Apellido*">
-            </div>
-
-            <div>
-                <label for="email"></label>
-                <input id="email" type="email" placeholder="Correo electrónico*">
-            </div>
-
-            <div>
-                <label for="celular"></label>
-                <input type="celular" type="number" placeholder="Celular*">
-            </div>
-
-            <div>
-                <label for="foto-referencia"></label>
-                <input type="foto-referencia" placeholder="Foto referencia">
-                <input type="submit" value="Examinar">
-            </div>
-
-            <div>
-                <label for="foto-zona-cuerpo"></label>
-                <input type="foto-zona-cuerpo" placeholder="Foto zona del cuerpo">
-                <input type="submit" value="Examinar">
-            </div>
-
-            <div>
-                <label for="comentarios"></label>
-                <textarea name="" id="" cols="30" rows="10"
-                    placeholder="Idea del tatuaje | Medidas de la zona a tatuar en cm"></textarea>
-            </div>
-
-            <div>
-                <input type="submit" value="Enviar">
-                <input type="submit" value="Limpiar datos">
-            </div>
-        </form>
-
-        <figure>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13131.847578003311!2d-58.42789677111981!3d-34.63040323103435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccba995405047%3A0x39601bb2d0a0ef8f!2sBoedo%2C%20CABA!5e0!3m2!1ses!2sar!4v1678305431331!5m2!1ses!2sar"
-                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </figure>
-
-        <section>
-            <h3>Medios de transporte</h3>
-            <ul>
-                <li>Colectivos: 7 - 15 - 53 - 57 - 65 - 85 - 119</li>
-                <li>Tren: Sarmiento</li>
-                <li>Subte: Linea E</li>
-            </ul>
-
-            <figure>
-                <img src="../img/tattoo-cartel.jpg" alt="cartel tattoo neon">
-            </figure>
         </section>
+
+        <section class="trans-mapa container">
+            <div class="row">
+                <div class="trans col-12 col-md-6">
+                    <h3>Medios de transporte</h3>
+                    <ul>
+                        <li>Colectivos: 7 - 15 - 53 - 57 - 65 - 85 - 119</li>
+                        <li>Tren: Sarmiento</li>
+                        <li>Subte: Linea E</li>
+                    </ul>
+                </div>
+
+                <figure class="mapa col-12 col-md-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13131.847578003311!2d-58.42789677111981!3d-34.63040323103435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccba995405047%3A0x39601bb2d0a0ef8f!2sBoedo%2C%20CABA!5e0!3m2!1ses!2sar!4v1678305431331!5m2!1ses!2sar"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </figure>
+            </div>
+        </section>
+
 
         <div>
             <a href="#top"><i class="bi bi-chevron-double-up"></i></a>
@@ -122,10 +132,10 @@
         <div class="caja-footer">
             <nav class="nav-footer">
                 <ul>
-                    <li><a href="./tatuadores.html">Tatuadores  |</a></li>
-                    <li><a href="./galeria.html">Galería  |</a></li>
-                    <li><a href="./cuidados.html">Cuidados  |</a></li>
-                    <li><a href="./preguntas-frecuentes.html">Preguntas Frecuentes  |</a></li>
+                    <li><a href="./tatuadores.html">Tatuadores |</a></li>
+                    <li><a href="./galeria.html">Galería |</a></li>
+                    <li><a href="./cuidados.html">Cuidados |</a></li>
+                    <li><a href="./preguntas-frecuentes.html">Preguntas Frecuentes |</a></li>
                     <li><a href="./contacto.html">Contacto</a></li>
                 </ul>
             </nav>

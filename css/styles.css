@@ -221,7 +221,7 @@ header {
 }
 
 /* GALERIA */
-.nombres-galeria{
+.nombres-galeria {
     font-family: "spline";
     font-style: italic;
     text-decoration: double;
@@ -230,15 +230,120 @@ header {
     padding-bottom: 15px;
 }
 
-.video-nico1, .video-nico2, .video-ana1, .video-ana2{
+.video-nico1,
+.video-nico2,
+.video-ana1,
+.video-ana2 {
     width: 20em;
     padding: 15px;
 }
 
-.img-tat{
+.img-tat {
     width: auto;
     gap: 20px;
     padding: 20px;
+}
+
+section h3 a {
+    color: black;
+    font-size: 1rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+
+/* CUIDADOS */
+.cuidados {
+    font-weight: bold;
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 10px;
+}
+
+.tarjeta-48 {
+    font-family: "spline";
+    padding: 10px;
+}
+
+.tarjeta-48 h3 {
+    font-size: 1.4rem;
+}
+
+.tarjeta-48 ol,
+ul {
+    font-size: 1rem;
+}
+
+/* FAQS */
+.faqs h2 {
+    font-weight: bold;
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 10px;
+}
+
+.faqs h4 {
+    font-size: 1.2rem;
+}
+
+.tarjeta-preguntas {
+    font-family: "spline";
+    padding: 10px;
+}
+
+.tarjeta-preguntas h3 {
+    font-size: 1.4rem;
+}
+
+.tarjeta-preguntas p {
+    font-size: 1rem;
+}
+
+.tarjeta-preguntas a {
+    color: black;
+    font-style: italic;
+    text-decoration: none;
+}
+
+/* CONTACTO */
+.contacto h2 {
+    font-weight: bold;
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 30px;
+}
+
+.contacto h3 {
+    font-size: 1.4rem;
+}
+
+.formulario-contacto {
+    display: flex;
+    justify-content: left;
+    padding-left: 30px;
+}
+
+.img-neon {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.trans-mapa {
+    padding: 30px;
+}
+
+.trans {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapa {
+    padding-right: 50px;
 }
 
 /* footer */
@@ -262,7 +367,7 @@ header {
     color: #aaaaaa;
 }
 
-ul {
+.nav-footer ul {
     list-style-type: none;
     display: inline-flex;
     justify-content: space-between;
@@ -316,9 +421,10 @@ ul {
         font-size: 1.4rem;
         color: #1f1e1e;
     }
-.bienvenidos{
-    font-size: 1.5rem;
-}
+
+    .bienvenidos {
+        font-size: 1.5rem;
+    }
 }
 
 /* PUNTO DE QUIEBRE 800 */
@@ -357,7 +463,7 @@ ul {
         padding: 0px;
     }
 
-    .presentacion h2{
+    .presentacion h2 {
         padding: 5px;
     }
 
