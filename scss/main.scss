@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "black one";
+    src: url();
+}
+
+@font-face {
+    font-family: "spline";
+    src: url(../fonts/splinesans.ttf);
+}
+
+@font-face {
+    font-family: "source sans";
+    src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+
+$fuente-principal: "black one";
+
+$fuente-secundaria: "spline";
+
+$fuente-terciaria: "source sans";
