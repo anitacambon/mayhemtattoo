@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: "black one";
-    src: url();
+    src: url(../fonts/blackopsone-regular.ttf);
 }
 
 @font-face {
@@ -21,22 +21,35 @@
 }
 
 $fuente-principal: "black one";
-
 $fuente-secundaria: "spline";
-
 $fuente-terciaria: "source sans";
 
+$color-principal: black;
+$color-secundario: white;
+$color-terciario: #fd0901;
+
 body {
-    background-color: rgb(182, 7, 7);
+    background-image: linear-gradient(to bottom, $color-secundario, rgb(170, 166, 166));
 }
 
 h1 a {
-    color: white;
-    font-family: "black one";
+    color: $color-secundario;
+    font-family: $fuente-principal;
     font-size: 2.5rem;
     text-align: center;
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+h2,
+h3,
+h4,
+p,
+a,
+span,
+ul,
+ol {
+    font-family: $fuente-secundaria;
 }

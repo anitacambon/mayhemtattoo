@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "black one";
-  src: url();
+  src: url(../fonts/blackopsone-regular.ttf);
 }
 @font-face {
   font-family: "spline";
@@ -15,6 +15,162 @@
 @font-face {
   font-family: "source sans";
   src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+body {
+  background-image: linear-gradient(to bottom, white, rgb(170, 166, 166));
+}
+
+h1 a {
+  color: white;
+  font-family: "black one";
+  font-size: 2.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2,
+h3,
+h4,
+p,
+a,
+span,
+ul,
+ol {
+  font-family: "spline";
+}
+
+.caja-footer {
+  position: relative;
+  bottom: 0px;
+  text-align: center;
+  background-color: black;
+}
+
+.nav-footer {
+  font-size: 0.6rem;
+  color: #aaaaaa;
+  list-style: none;
+}
+.nav-footer a {
+  text-align: center;
+  text-decoration: none;
+  color: #aaaaaa;
+}
+.nav-footer ul {
+  list-style-type: none;
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.contacto-footer {
+  font-size: 1rem;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  gap: 0.3rem;
+}
+.contacto-footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.caja-encabezado {
+  height: 100px;
+  background-color: black;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+header {
+  opacity: 0.75;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+}
+
+.nav-header {
+  display: none;
+}
+
+.insta-tablet {
+  display: none;
+}
+
+.bi-list {
+  font-size: 1em;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-top: 1.4em;
+  padding-left: 0.3em;
+}
+
+.bi-instagram {
+  font-size: 0.7em;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-top: 1.4em;
+  padding-right: 0.3em;
+}
+
+.bi-chevron-double-up {
+  font-size: 30px;
+  color: black;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+}
+
+@media (min-width: 600px) {
+  h1 a {
+    font-size: 3rem;
+  }
+  .bi-list {
+    display: none;
+  }
+  .nav-header {
+    background-color: #fd0901;
+    color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    gap: 20px;
+    list-style: none;
+  }
+  .nav-header a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+}
+@media (min-width: 800px) {
+  h1 a {
+    font-size: 4.5rem;
+  }
+  .insta-tablet {
+    font-family: "spline";
+    font-size: 1.3rem;
+    color: white;
+    font-weight: bold;
+    display: flex;
+  }
+  .bi-instagram {
+    font-size: 2rem;
+  }
+  .header-insta {
+    display: inline-flex;
+    align-items: end;
+    gap: 0.2em;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
