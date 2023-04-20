@@ -39,7 +39,7 @@ ol {
 }
 
 .nav-footer {
-  font-size: 0.6rem;
+  font-size: 2rem;
   color: #aaaaaa;
   list-style: none;
 }
@@ -65,109 +65,6 @@ ol {
 .contacto-footer a {
   text-decoration: none;
   color: white;
-}
-
-.caja-encabezado {
-  height: 100px;
-  background-color: black;
-  display: flex;
-  padding: 10px;
-}
-
-header {
-  opacity: 0.75;
-  position: sticky;
-  top: 0px;
-  z-index: 3;
-}
-
-h1 a {
-  color: white;
-  font-family: "black one";
-  font-size: 2.5rem;
-  text-align: center;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav-header {
-  display: none;
-}
-
-.insta-tablet {
-  display: none;
-}
-
-.bi-list {
-  font-size: 1em;
-  color: white;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  padding-top: 1.4em;
-  padding-left: 0.3em;
-}
-
-.bi-instagram {
-  font-size: 0.7em;
-  color: white;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-
-.bi-chevron-double-up {
-  font-size: 30px;
-  color: black;
-  position: fixed;
-  bottom: 50px;
-  right: 20px;
-}
-
-@media (min-width: 600px) {
-  h1 a {
-    font-size: 3rem;
-  }
-  .bi-list {
-    display: none;
-  }
-  .nav-header {
-    background-color: #fd0901;
-    color: black;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    gap: 20px;
-    list-style: none;
-  }
-  .nav-header a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-  }
-}
-@media (min-width: 800px) {
-  h1 a {
-    font-size: 4.5rem;
-  }
-  .insta-tablet {
-    font-family: "spline";
-    font-size: 1.3rem;
-    color: white;
-    font-weight: bold;
-    display: flex;
-  }
-  .bi-instagram {
-    font-size: 2rem;
-  }
-  .header-insta {
-    display: inline-flex;
-    align-items: end;
-    gap: 0.2em;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */
