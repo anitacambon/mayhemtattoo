@@ -3,7 +3,6 @@
     background-color: $color-principal;
     display: flex;
     padding: 10px;
-    justify-content: space-between;
 }
 
 header {
@@ -11,6 +10,17 @@ header {
     position: sticky;
     top: 0px;
     z-index: 3;
+}
+
+h1 a {
+    color: $color-secundario;
+    font-family: $fuente-principal;
+    font-size: 2.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-header {
@@ -37,8 +47,6 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    padding-top: 1.4em;
-    padding-right: 0.3em;
 }
 
 .bi-chevron-double-up {
