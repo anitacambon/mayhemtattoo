@@ -1,0 +1,103 @@
+.presentacion {
+    padding: 10px;
+
+    & h2 {
+        font-size: 2em;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & p {
+        font-size: 0.8em;
+        text-align: justify;
+        padding: 15px;
+    }
+}
+
+.foto-nico-pres,
+.foto-ani-pres {
+    width: auto;
+    padding: 5px;
+}
+
+.cierre-pres {
+    font-family: "source";
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.comentarios-index {
+    color: rgb(27, 27, 27);
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* tarjeta ale */
+
+.tarjeta-comentario {
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-ale {
+    width: 50px;
+}
+
+.nombre-usuario-grande {
+    font-family: $fuente-terciaria;
+    font-size: 0.8rem;
+    padding-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.link-cliente {
+    font-family: $fuente-terciaria;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #5c5b5b;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+.contenedor-texto-tarjeta {
+    font-family: $fuente-terciaria;
+    font-size: 0.7rem;
+    padding-top: 5px;
+}
+
+.fecha-comentario {
+    font-family: $fuente-terciaria;
+    font-size: 0.5rem;
+    padding-top: 5px;
+}
+
+.tarjeta-comentario {
+    display: grid;
+    grid-template-columns: 50px 90px 5fr;
+    grid-template-rows: 50px .8fr 0.5fr;
+}
+
+.contenedor-texto-tarjeta {
+    grid-row: 2/3;
+    grid-column: 1/5;
+}
+
+.fecha-comentario {
+    grid-row: 3/4;
+    grid-column: 1/3;
+}

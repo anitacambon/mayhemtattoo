@@ -3,8 +3,7 @@
 }
 
 .container-img-index img{
-    display: flex;
-    justify-content: center;
+    display: inline-flex;
     align-items: center;
     padding-left: 30px;
     padding-right: 30px;
@@ -46,6 +45,7 @@
 }
 
 
+
 @media (min-width: 600px) {
     .container-img-index {
         display: none;
@@ -68,6 +68,4 @@
             width: 50%;
         }
     }
-
-
 }

@@ -1,0 +1,45 @@
+.cuidados {
+    font-size: 2em;
+    padding-bottom: 30px;
+}
+
+.nombres-galeria {
+    font-family: $fuente-secundaria;
+    font-style: italic;
+    text-decoration: double;
+    padding-left: 25px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.video-nico1,
+.video-nico2,
+.video-ana1,
+.video-ana2 {
+    width: 20em;
+    padding: 15px;
+}
+
+.img-tat {
+    width: auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+section h3 a {
+    color: $fuente-principal;
+    font-size: 0.7em;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+
+.img-care1 {
+    width: 25%;
+}
+
+.img-care2 {
+    width: 50%;
+}

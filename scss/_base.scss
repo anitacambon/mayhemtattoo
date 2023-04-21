@@ -29,7 +29,11 @@ $color-secundario: white;
 $color-terciario: #fd0901;
 
 body {
-    background-image: linear-gradient(to bottom, $color-secundario, rgb(170, 166, 166));
+    background-image: linear-gradient(to bottom, rgb(170, 166, 166), $color-secundario,);
+}
+
+main {
+    min-height: 100%;
 }
 
 h2,
