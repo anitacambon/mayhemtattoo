@@ -1,0 +1,121 @@
+header {
+    width: 100%;
+    opacity: .75;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+
+.caja-encabezado {
+    height: 100%;
+    background-color: $color-principal;
+}
+
+h1 a {
+    color: $color-secundario;
+    font-family: $fuente-principal;
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bi-list {
+    font-size: 2em;
+    color: $color-secundario;
+    display: inline-block;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+.bi-instagram {
+    font-size: 1.8em;
+    color: $color-secundario;
+    display: flex;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.nav-header {
+    display: none;
+}
+
+.insta-tablet {
+    display: none;
+}
+
+.header-insta {
+    display: flex;
+    justify-content: space-between;
+
+    & a {
+        text-decoration: none;
+    }
+}
+
+.header.caja-encabezado {
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 1;
+}
+
+@media (min-width: 600px) {
+    h1 a {
+        font-size: 4rem;
+    }
+
+    .bi-list {
+        display: none;
+    }
+
+    .nav-header {
+        background-color: $color-terciario;
+        color: $color-principal;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        gap: 20px;
+        list-style: none;
+
+        & a {
+            text-decoration: none;
+            color: $color-principal;
+            font-weight: bold;
+        }
+    }
+
+    .bi-instagram {
+        padding-bottom: 10px;
+    }
+}
+
+@media (min-width:800px) {
+    h1 a {
+        font-size: 4.5rem;
+    }
+
+    .insta-tablet {
+        font-family: $fuente-secundaria;
+        font-size: 1.3rem;
+        color: $color-secundario;
+        font-weight: bold;
+        display: flex;
+        padding-bottom: 10px;
+        padding-right: 5px;
+    }
+
+    .bi-instagram {
+        font-size: 2rem;
+    }
+
+    .header-insta {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        gap: 0.2em;
+    }
+
+}

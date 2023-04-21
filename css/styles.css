@@ -20,17 +20,6 @@ body {
   background-image: linear-gradient(to bottom, white, rgb(170, 166, 166));
 }
 
-h1 a {
-  color: white;
-  font-family: "black one";
-  font-size: 2.5rem;
-  text-align: center;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 h2,
 h3,
 h4,
@@ -50,9 +39,10 @@ ol {
 }
 
 .nav-footer {
-  font-size: 0.6rem;
+  font-size: 1rem;
   color: #aaaaaa;
   list-style: none;
+  padding-top: 10px;
 }
 .nav-footer a {
   text-align: center;
@@ -63,7 +53,7 @@ ol {
   list-style-type: none;
   display: inline-flex;
   justify-content: space-between;
-  padding: 0.5rem;
+  padding-top: 10px;
 }
 
 .contacto-footer {
@@ -72,25 +62,60 @@ ol {
   display: flex;
   justify-content: space-around;
   gap: 0.3rem;
+  padding-bottom: 10px;
 }
 .contacto-footer a {
   text-decoration: none;
   color: white;
 }
 
-.caja-encabezado {
-  height: 100px;
-  background-color: black;
-  display: flex;
-  padding: 10px;
-  justify-content: space-between;
+@media (min-width: 600px) {
+  .nav-footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+  }
 }
-
 header {
+  width: 100%;
   opacity: 0.75;
   position: sticky;
   top: 0px;
   z-index: 3;
+}
+
+.caja-encabezado {
+  height: 100%;
+  background-color: black;
+}
+
+h1 a {
+  color: white;
+  font-family: "black one";
+  font-size: 3rem;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bi-list {
+  font-size: 2em;
+  color: white;
+  display: inline-block;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+
+.bi-instagram {
+  font-size: 1.8em;
+  color: white;
+  display: flex;
+  padding-top: 10px;
+  padding-right: 10px;
 }
 
 .nav-header {
@@ -101,37 +126,23 @@ header {
   display: none;
 }
 
-.bi-list {
-  font-size: 1em;
-  color: white;
+.header-insta {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  padding-top: 1.4em;
-  padding-left: 0.3em;
+  justify-content: space-between;
+}
+.header-insta a {
+  text-decoration: none;
 }
 
-.bi-instagram {
-  font-size: 0.7em;
-  color: white;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  padding-top: 1.4em;
-  padding-right: 0.3em;
-}
-
-.bi-chevron-double-up {
-  font-size: 30px;
-  color: black;
-  position: fixed;
-  bottom: 50px;
-  right: 20px;
+.header.caja-encabezado {
+  display: grid;
+  grid-template-columns: 3;
+  grid-template-rows: 1;
 }
 
 @media (min-width: 600px) {
   h1 a {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .bi-list {
     display: none;
@@ -151,6 +162,9 @@ header {
     color: black;
     font-weight: bold;
   }
+  .bi-instagram {
+    padding-bottom: 10px;
+  }
 }
 @media (min-width: 800px) {
   h1 a {
@@ -162,14 +176,82 @@ header {
     color: white;
     font-weight: bold;
     display: flex;
+    padding-bottom: 10px;
+    padding-right: 5px;
   }
   .bi-instagram {
     font-size: 2rem;
   }
   .header-insta {
-    display: inline-flex;
+    display: flex;
+    justify-content: end;
     align-items: end;
     gap: 0.2em;
+  }
+}
+#nav-carousel {
+  display: none;
+}
+
+.container-img-index img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.contenedor a {
+  text-decoration: none;
+  font-family: "spline";
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  opacity: 0.75;
+  width: 50%;
+}
+.contenedor img {
+  margin: auto;
+  opacity: 0.5;
+}
+.contenedor img:hover {
+  opacity: 0.8;
+}
+
+.txt-centrado {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 600px) {
+  .container-img-index {
+    display: none;
+  }
+  #nav-carousel {
+    display: flex;
+    padding: 20px;
+    opacity: 0.75;
+  }
+  #nav-carousel a {
+    text-decoration: none;
+    text-align: center;
+    font-family: "spline";
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    opacity: 0.75;
+    width: 50%;
   }
 }
 

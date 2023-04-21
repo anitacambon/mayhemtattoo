@@ -1,1 +1,73 @@
-// display block imagenes en mobile. display flex imagenes en desktop
+#nav-carousel {
+    display: none;
+}
+
+.container-img-index img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.contenedor {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+
+    & a{
+        text-decoration: none;
+        font-family: $fuente-secundaria;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $color-secundario;
+        background-color: $color-principal;
+        opacity: .75;
+        width: 50%;
+    }
+
+    & img {
+        margin: auto;
+        opacity: .50;
+        
+        &:hover{
+            opacity: .80;
+        }
+    }
+}
+
+.txt-centrado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@media (min-width: 600px) {
+    .container-img-index {
+        display: none;
+    }
+
+    #nav-carousel {
+        display: flex;
+        padding: 20px;
+        opacity: .75;
+
+        & a{
+            text-decoration: none;
+            text-align: center;
+            font-family: $fuente-secundaria;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: $color-secundario;
+            background-color: $color-principal;
+            opacity: .75;
+            width: 50%;
+        }
+    }
+
+
+}
