@@ -1,0 +1,50 @@
+.caja-footer {
+    position: relative;
+    bottom: 0px;
+    text-align: center;
+    background-color: $color-principal;
+}
+
+.nav-footer {
+    font-size: 1rem;
+    color: #aaaaaa;
+    list-style: none;
+    padding-top: 10px;
+
+    & a {
+        text-align: center;
+        text-decoration: none;
+        color: #aaaaaa;
+    }
+
+    & ul {
+        list-style-type: none;
+        display: inline-flex;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+}
+
+.contacto-footer {
+    font-size: 1rem;
+    color: $color-secundario;
+    display: flex;
+    justify-content: space-around;
+    gap: 0.3rem;
+    padding-bottom: 10px;
+
+    & a {
+        text-decoration: none;
+        color: $color-secundario;
+    }
+}
+
+@media (min-width:600px) {
+    .nav-footer {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+    }
+}

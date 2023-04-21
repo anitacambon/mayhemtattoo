@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: "black one";
+    src: url(../fonts/blackopsone-regular.ttf);
+}
+
+@font-face {
+    font-family: "spline";
+    src: url(../fonts/splinesans.ttf);
+}
+
+@font-face {
+    font-family: "source sans";
+    src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+
+$fuente-principal: "black one";
+$fuente-secundaria: "spline";
+$fuente-terciaria: "source sans";
+
+$color-principal: black;
+$color-secundario: white;
+$color-terciario: #fd0901;
+
+body {
+    background-image: linear-gradient(to bottom, $color-secundario, rgb(170, 166, 166));
+}
+
+h2,
+h3,
+h4,
+p,
+a,
+span,
+ul,
+ol {
+    font-family: $fuente-secundaria;
+}

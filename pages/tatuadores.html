@@ -15,26 +15,31 @@
 
 <body>
 
-    <header class="top">
+    <header class="caja-encabezado" class="top">
         <h1>
-            <div class="caja-encabezado">
-                <div>
-                    <i class="bi bi-list"></i>
-                </div>
-                <a href="../index.html">MAYHEM TATTOO</a>
-                <div class="header-insta">
-                    <span class="insta-tablet">Seguinos</span>
-                    <div>
-                        <a href="https://www.instagram.com/mayhem_tatt88/" target="_blank"><i
-                                class="bi bi-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
+            <a href="../index.html">MAYHEM TATTOO</a>
         </h1>
+        <div class="header-insta">
+            <li class="nav-item dropdown">
+                <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-list"></i>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./tatuadores.html">Tatuadores</a></li>
+                    <li><a class="dropdown-item" href="./galeria.html">Galería</a></li>
+                    <li><a class="dropdown-item" href="./cuidados.html">Cuidados</a></li>
+                    <li><a class="dropdown-item" href="./preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                    <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+                </ul>
+            </li>
+            <span class="insta-tablet">Seguinos</span>
+            <div>
+                <a href="https://www.instagram.com/mayhem_tatt88/" target="_blank"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
 
         <nav>
             <ul class="nav-header container">
-                <li><a class="nav-link active" href="./tatuadores.html">Tatuadores</a></li>
+                <li><a href="./tatuadores.html">Tatuadores</a></li>
                 <li><a href="./galeria.html">Galería</a></li>
                 <li><a href="./cuidados.html">Cuidados</a></li>
                 <li><a href="./preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
@@ -94,6 +99,66 @@
             </div>
         </div>
 
+        <hr>
+
+        <section class="container">
+            <h3 class="comentarios-index">Comentarios de algunos clientes</h3>
+            <div class="row">
+
+                <article class="tarjeta-comentario col-12 col-md-4">
+                    <figure>
+                        <img class="imagen-ale" src="../img/foto-ale.jpg" alt="foto insta ale">
+                    </figure>
+
+                    <div class="nombre-usuario">
+                        <h4 class="nombre-usuario-grande">Ale Jacobs</h4>
+                        <a class="link-cliente" href="https://www.instagram.com/ale_jacobs/"
+                            target="_blank">@ale_jacobs</a>
+                    </div>
+
+                    <p class="contenedor-texto-tarjeta">Es tal cual lo que quería y no imaginé que iba a quedar tan
+                        hermoso!
+                        Sos muy profesional! Te felicito
+                        x este, el anterior q me hice y los que seguramente vendrán!</p>
+                    <p class="fecha-comentario">8:21 PM / Dec 21, 2022</p>
+                </article>
+
+
+                <article class="tarjeta-comentario col-12 col-md-4">
+                    <figure>
+                        <img class="imagen-ale" src="../img/foto-fer.jpg" alt="foto instagram fer">
+                    </figure>
+
+                    <div class="nombre-usuario">
+                        <h4 class="nombre-usuario-grande">Fernando Rey</h4>
+                        <a class="link-cliente" href="https://www.instagram.com/fernandoreyss/"
+                            target="_blank">@fernandoreyss</a>
+                    </div>
+
+                    <p class="contenedor-texto-tarjeta">Los genios son ustedes chicos!!! Nico y Ana !!! Mil graciassss
+                    </p>
+                    <p class="fecha-comentario">8:21 PM / Dec 21, 2022</p>
+                </article>
+
+
+                <article class="tarjeta-comentario col-12 col-md-4">
+                    <figure>
+                        <img class="imagen-ale" src="../img/foto-sergio.jpg" alt="foto instagram sergio">
+                    </figure>
+
+                    <div class="nombre-usuario">
+                        <h4 class="nombre-usuario-grande">Sergio Victor</h4>
+                        <a class="link-cliente" href="https://www.instagram.com/sergiovictor16/"
+                            target="_blank">@sergiovictor16</a>
+                    </div>
+                    <p class="contenedor-texto-tarjeta">Gracias Nico, un trabajo genial, más allá de haber tapado mi
+                        desteñida araña, tu trabajo superó mis
+                        expectativas.</p>
+                    <p class="fecha-comentario">8:21 PM / Dec 21, 2022</p>
+                </article>
+            </div>
+        </section>
+
         <div>
             <a href="#top"><i class="bi bi-chevron-double-up"></i></a>
         </div>
@@ -101,15 +166,16 @@
 
     <footer>
         <div class="caja-footer">
-            <nav class="nav-footer">
-                <ul>
-                    <li><a href="./tatuadores.html">Tatuadores |</a></li>
-                    <li><a href="./galeria.html">Galería |</a></li>
-                    <li><a href="./cuidados.html">Cuidados |</a></li>
-                    <li><a href="./preguntas-frecuentes.html">Preguntas Frecuentes |</a></li>
+            <nav>
+                <ul class="nav-footer">
+                    <li><a href="./tatuadores.html">Tatuadores</a></li>
+                    <li><a href="./galeria.html">Galería</a></li>
+                    <li><a href="./cuidados.html">Cuidados</a></li>
+                    <li><a href="./preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
                     <li><a href="./contacto.html">Contacto</a></li>
                 </ul>
             </nav>
+            <hr>
             <article class="contacto-footer">
                 <a href="https://www.instagram.com/mayhem_tatt88/" target="_blank">@mayhem_tatt88</a>
                 <span><i class="bi bi-telephone"></i>+54 9 11 5505 4668</span>
