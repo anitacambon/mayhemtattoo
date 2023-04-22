@@ -1,0 +1,54 @@
+h2 {
+    display: block;
+    justify-content: center;
+    padding: 15px;
+    font-size: 1.5rem;
+}
+
+.contacto h3 {
+    font-family: $fuente-terciaria;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 15px;
+}
+
+.cuerpo-contacto {
+    display: grid;
+    justify-content: center;
+}
+
+.formulario-contacto,.trans-mapa{
+    text-align: center;
+}
+
+.espacio {
+    padding: 20px;
+    width: auto;
+
+    &-boton {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    &-texto {
+        padding: 10px;
+    }
+}
+
+.trans {
+    padding: 10px;
+}
+
+.mapa {
+    width: 100%;
+    padding: 10px;
+}
+
+@media (min-width: 600px) {
+    .cuerpo-contacto {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50%;
+        padding-bottom: 20px;
+    }
+}

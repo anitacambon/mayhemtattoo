@@ -28,9 +28,11 @@ $color-principal: black;
 $color-secundario: white;
 $color-terciario: #fd0901;
 
-body {
-    background-image: linear-gradient(to bottom, rgb(170, 166, 166), $color-secundario,);
-}
+// body {
+//     background: -moz-repeating-linear-gradient(-45deg, #bd030371, #fc2a2a54 30px, #eee 30px, #eee 71px);
+//     background: -webkit-repeating-linear-gradient(-45deg, #bd030371, #fc2a2a54 30px, #eee 30px, #eee 71px);
+//     background-size: 100px 100px;
+//     }
 
 main {
     min-height: 100%;
@@ -45,4 +47,8 @@ span,
 ul,
 ol {
     font-family: $fuente-secundaria;
+}
+
+ul,ol,li{
+    list-style-type: none;
 }
