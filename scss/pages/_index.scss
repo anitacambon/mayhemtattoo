@@ -2,14 +2,9 @@
     display: none;
 }
 
-.container-img-index img{
-    display: flex;
-    justify-content: center;
+.img-index img {
+    display: inline-flex;
     align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 5px;
-    padding-bottom: 5px;
 }
 
 .contenedor {
@@ -29,8 +24,12 @@
     }
 
     & img {
+        width: 90vw;
         margin: auto;
         opacity: .50;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
         
         &:hover{
             opacity: .80;
@@ -46,15 +45,15 @@
 }
 
 
+
 @media (min-width: 600px) {
-    .container-img-index {
+    .index-mobile {
         display: none;
     }
 
     #nav-carousel {
         display: flex;
         padding: 20px;
-        opacity: .75;
 
         & a{
             text-decoration: none;
@@ -68,6 +67,4 @@
             width: 50%;
         }
     }
-
-
 }

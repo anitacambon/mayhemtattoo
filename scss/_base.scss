@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -17,8 +17,14 @@
 
 @font-face {
     font-family: "source sans";
-    src: url(../fonts/SourceSansPro-Regular.ttf);
+    src: url(../fonts/sourcesanspro-regular.ttf);
 }
+
+@font-face {
+    font-family: "play";
+    src: url(../fonts/play-regular.ttf);
+}
+
 
 $fuente-principal: "black one";
 $fuente-secundaria: "spline";
@@ -29,7 +35,17 @@ $color-secundario: white;
 $color-terciario: #fd0901;
 
 body {
-    background-image: linear-gradient(to bottom, $color-secundario, rgb(170, 166, 166));
+    background: $color-secundario;
+    min-height: 100%;
+
+    @media (min-width: 600px) {
+        background: $color-secundario;
+        background-image: url(../img/back3.jpg);
+        background-size: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
 }
 
 h2,
@@ -41,4 +57,10 @@ span,
 ul,
 ol {
     font-family: $fuente-secundaria;
+}
+
+ul,
+ol,
+li {
+    list-style-type: none;
 }

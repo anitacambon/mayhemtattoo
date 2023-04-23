@@ -1,0 +1,44 @@
+.nombres-galeria {
+    font-family: $fuente-secundaria;
+    font-style: italic;
+    text-decoration: double;
+    padding-left: 25px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+h3 a {
+    text-decoration: none;
+    color: $color-principal;
+    display: flex;
+    justify-content: end;
+}
+
+.video-nico1,.video-ana1 {
+    width: 40%;
+}
+
+.img-tat {
+    border-radius: 1.5em;
+    width: 30%;
+    gap: 10px;
+    padding: 5px;
+}
+
+@media (min-width: 600px) {
+
+    .galeria {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 2;
+    }
+
+    .video-nico1,.video-ana1 {
+        padding: 20px;
+        width: 200px;
+        border-radius: 2em;
+        display: grid;
+        grid-column: span 2;
+    }
+
+}
