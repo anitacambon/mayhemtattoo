@@ -2,6 +2,8 @@
     padding: 10px;
 
     & h2 {
+        font-weight: bold;
+        color: $color-principal;
         font-size: 2em;
         text-align: center;
         display: flex;
@@ -15,7 +17,8 @@
     }
 
     & p {
-        font-size: 0.8em;
+        color: $color-principal;
+        font-size: 1em;
         text-align: justify;
         padding: 15px;
         background-color: rgba(255, 255, 255, 0.288);
@@ -30,10 +33,12 @@
     background-color: rgba(255, 255, 255, 0.288);
 }
 .cierre-pres {
+    color: $color-principal;
     font-family: "source";
     font-style: italic;
     text-align: center;
     padding: 20px;
+    font-size: 1.2em;
     background-color: rgba(255, 255, 255, 0.288);
 }
 
