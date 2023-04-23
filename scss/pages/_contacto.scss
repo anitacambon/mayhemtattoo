@@ -1,3 +1,7 @@
+.contacto {
+    background-color: rgba(255, 255, 255, 0.288);
+}
+
 h2 {
     display: block;
     justify-content: center;
@@ -15,6 +19,14 @@ h2 {
 .cuerpo-contacto {
     display: grid;
     justify-content: center;
+}
+
+.formulario-contacto {
+    padding: 20px;
+
+    & h4 {
+    text-align: left;
+}
 }
 
 .formulario-contacto,.trans-mapa{
@@ -41,7 +53,7 @@ h2 {
 
 .mapa {
     width: 100%;
-    padding: 10px;
+    padding-right: 15px;
 }
 
 @media (min-width: 600px) {

@@ -22,10 +22,14 @@ h1 a {
     align-items: center;
 }
 
+.nav {
+    display: none;
+}
+
 .bi-list {
     font-size: 1.5em;
     color: $color-secundario;
-    display: inline-block;
+    display: inline-flex;
     justify-content: space-between;
     padding-left: 10px;
 }
@@ -37,10 +41,6 @@ h1 a {
     padding-top: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
-}
-
-.nav-header {
-    display: none;
 }
 
 .insta-tablet {
@@ -69,8 +69,16 @@ h1 a {
 
 @media (min-width:800px) {
     h1 a {
-        font-size: 2.5rem;
-        padding-top: 15px;
+        font-size: 3rem;
+    }
+
+    .bi-list {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+
     }
 
     .bi-instagram {
@@ -92,23 +100,23 @@ h1 a {
         justify-content: end;
         align-items: end;
         gap: 0.2em;
-    }
 
-    .nav-header {
-        background-color: $color-terciario;
-        color: $color-principal;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        padding: 5px;
-        gap: 20px;
-        list-style: none;
-
-        & a {
-            text-decoration: none;
-            color: $color-principal;
-            font-weight: bold;
+        & h1 {
+            display: flex;
+            justify-content: start;
+            padding-left: 10%;
         }
     }
 
+    .nav-item a {
+        font-family: "play";
+        font-size: 70%;
+        text-decoration: none;
+        color: gray;
+        gap: 10px;
+    }
+
+    .nav-link {
+        padding-inline: 10px;
+    }
 }

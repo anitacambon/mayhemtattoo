@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
@@ -14,10 +14,25 @@
 }
 @font-face {
   font-family: "source sans";
-  src: url(../fonts/SourceSansPro-Regular.ttf);
+  src: url(../fonts/sourcesanspro-regular.ttf);
 }
-main {
+@font-face {
+  font-family: "play";
+  src: url(../fonts/play-regular.ttf);
+}
+body {
+  background: white;
   min-height: 100%;
+}
+@media (min-width: 600px) {
+  body {
+    background: white;
+    background-image: url(../img/back3.jpg);
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
 }
 
 h2,
@@ -31,7 +46,9 @@ ol {
   font-family: "spline";
 }
 
-ul, ol, li {
+ul,
+ol,
+li {
   list-style-type: none;
 }
 
@@ -47,6 +64,7 @@ ul, ol, li {
   color: #aaaaaa;
   list-style: none;
   padding-top: 10px;
+  padding-inline-start: 0;
 }
 .nav-footer a {
   text-align: center;
@@ -54,10 +72,7 @@ ul, ol, li {
   color: #aaaaaa;
 }
 .nav-footer ul {
-  list-style-type: none;
-  display: inline-flex;
-  justify-content: space-between;
-  padding-top: 10px;
+  list-style: none;
 }
 
 .contacto-footer {
@@ -79,7 +94,7 @@ ul, ol, li {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 70px;
+    gap: 60px;
   }
 }
 header {
@@ -106,10 +121,14 @@ h1 a {
   align-items: center;
 }
 
+.nav {
+  display: none;
+}
+
 .bi-list {
   font-size: 1.5em;
   color: white;
-  display: inline-block;
+  display: inline-flex;
   justify-content: space-between;
   padding-left: 10px;
 }
@@ -121,10 +140,6 @@ h1 a {
   padding-top: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
-}
-
-.nav-header {
-  display: none;
 }
 
 .insta-tablet {
@@ -150,14 +165,16 @@ h1 a {
 }
 @media (min-width: 800px) {
   h1 a {
-    font-size: 2.5rem;
-    padding-top: 15px;
-  }
-  .bi-instagram {
-    font-size: 1.5em;
+    font-size: 3rem;
   }
   .bi-list {
     display: none;
+  }
+  .nav {
+    display: flex;
+  }
+  .bi-instagram {
+    font-size: 1.5em;
   }
   .insta-tablet {
     font-family: "spline";
@@ -174,33 +191,29 @@ h1 a {
     align-items: end;
     gap: 0.2em;
   }
-  .nav-header {
-    background-color: #fd0901;
-    color: black;
-    text-align: center;
+  .header-insta h1 {
     display: flex;
-    justify-content: center;
-    padding: 5px;
-    gap: 20px;
-    list-style: none;
+    justify-content: start;
+    padding-left: 10%;
   }
-  .nav-header a {
+  .nav-item a {
+    font-family: "play";
+    font-size: 70%;
     text-decoration: none;
-    color: black;
-    font-weight: bold;
+    color: gray;
+    gap: 10px;
+  }
+  .nav-link {
+    padding-inline: 10px;
   }
 }
 #nav-carousel {
   display: none;
 }
 
-.container-img-index img {
+.img-index img {
   display: inline-flex;
   align-items: center;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
 
 .contenedor {
@@ -219,8 +232,11 @@ h1 a {
   width: 50%;
 }
 .contenedor img {
+  width: 90vw;
   margin: auto;
   opacity: 0.5;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .contenedor img:hover {
   opacity: 0.8;
@@ -234,13 +250,12 @@ h1 a {
 }
 
 @media (min-width: 600px) {
-  .container-img-index {
+  .index-mobile {
     display: none;
   }
   #nav-carousel {
     display: flex;
     padding: 20px;
-    opacity: 0.75;
   }
   #nav-carousel a {
     text-decoration: none;
@@ -264,15 +279,23 @@ h1 a {
   justify-content: center;
   align-items: center;
 }
+.presentacion figure {
+  display: flex;
+  justify-content: center;
+}
 .presentacion p {
   font-size: 0.8em;
   text-align: justify;
   padding: 15px;
+  background-color: rgba(255, 255, 255, 0.288);
 }
 
 .foto-ani-pres, .foto-nico-pres {
   width: auto;
-  padding: 5px;
+}
+
+.comentarios {
+  background-color: rgba(255, 255, 255, 0.288);
 }
 
 .cierre-pres {
@@ -280,6 +303,7 @@ h1 a {
   font-style: italic;
   text-align: center;
   padding: 20px;
+  background-color: rgba(255, 255, 255, 0.288);
 }
 
 .comentarios-index {
@@ -306,8 +330,9 @@ h1 a {
 }
 
 .nombre-usuario-grande {
+  color: black;
   font-family: "source sans";
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   padding-left: 5px;
   display: flex;
   justify-content: center;
@@ -318,7 +343,7 @@ h1 a {
   font-family: "source sans";
   font-size: 0.7rem;
   font-weight: bold;
-  color: #5c5b5b;
+  color: black;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -326,14 +351,16 @@ h1 a {
 }
 
 .contenedor-texto-tarjeta {
+  color: black;
   font-family: "source sans";
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   padding-top: 5px;
 }
 
 .fecha-comentario {
+  color: black;
   font-family: "source sans";
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   padding-top: 5px;
 }
 
@@ -379,7 +406,7 @@ h3 a {
 }
 
 .img-tat {
-  border-radius: 2em;
+  border-radius: 1.5em;
   width: 30%;
   gap: 10px;
   padding: 5px;
@@ -399,6 +426,10 @@ h3 a {
     grid-column: span 2;
   }
 }
+.back-cuidados {
+  background-color: rgba(255, 255, 255, 0.288);
+}
+
 .cuidados {
   font-size: 2em;
   padding-bottom: 20px;
@@ -425,12 +456,23 @@ section h3 a {
   padding: 20px;
 }
 
+.btn-primary {
+  background-color: black;
+}
+
+.faqs {
+  background-color: rgba(255, 255, 255, 0.288);
+  padding: 10px;
+}
 .faqs h2 {
   font-size: 2rem;
   padding: 10px;
   display: flex;
   justify-content: center;
   text-align: center;
+}
+.faqs h4 {
+  padding-left: 10px;
 }
 
 .tarjeta-preguntas {
@@ -450,7 +492,7 @@ section h3 a {
 
 .bi-person-plus,
 .bi-chat-left-dots-fill,
-.bi-droplet-fill,
+.bi-droplet,
 .bi-coin {
   font-size: 70px;
   display: grid;
@@ -472,6 +514,10 @@ section h3 a {
     padding: 30px;
   }
 }
+.contacto {
+  background-color: rgba(255, 255, 255, 0.288);
+}
+
 h2 {
   display: block;
   justify-content: center;
@@ -489,6 +535,13 @@ h2 {
 .cuerpo-contacto {
   display: grid;
   justify-content: center;
+}
+
+.formulario-contacto {
+  padding: 20px;
+}
+.formulario-contacto h4 {
+  text-align: left;
 }
 
 .formulario-contacto, .trans-mapa {
@@ -513,7 +566,7 @@ h2 {
 
 .mapa {
   width: 100%;
-  padding: 10px;
+  padding-right: 15px;
 }
 
 @media (min-width: 600px) {
