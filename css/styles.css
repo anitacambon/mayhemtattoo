@@ -29,7 +29,7 @@ body {
   background-attachment: fixed;
   min-height: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   body {
     background: white;
     background-image: url(../img/back3.jpg);
@@ -253,7 +253,7 @@ h1 a {
   transform: translate(-50%, -50%);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .index-mobile {
     display: none;
   }
@@ -424,7 +424,7 @@ h3 a {
   padding: 5px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .galeria {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -510,7 +510,7 @@ h3 a {
   padding-left: 10px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .tarjeta-preguntas {
     padding: 10px;
     display: grid;
@@ -584,7 +584,7 @@ h2 {
   padding-left: 15px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .cuerpo-contacto {
     display: grid;
     grid-template-columns: 50% 50%;
