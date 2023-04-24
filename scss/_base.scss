@@ -36,6 +36,11 @@ $color-terciario: #fd0901;
 
 body {
     background: $color-secundario;
+    background-image: url(../img/back4.jpeg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     min-height: 100%;
 
     @media (min-width: 600px) {

@@ -22,6 +22,11 @@
 }
 body {
   background: white;
+  background-image: url(../img/back4.jpeg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   min-height: 100%;
 }
 @media (min-width: 600px) {
@@ -234,7 +239,6 @@ h1 a {
 .contenedor img {
   width: 90vw;
   margin: auto;
-  opacity: 0.5;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -564,6 +568,10 @@ h2 {
 }
 .espacio-texto {
   padding: 10px;
+}
+
+.exam {
+  width: 100%;
 }
 
 .trans {
