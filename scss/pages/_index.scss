@@ -9,7 +9,7 @@
 
 .contenedor {
     position: relative;
-    display: inline-block;
+    display: inline-flex;
     text-align: center;
 
     & a {
@@ -52,18 +52,24 @@
 
     #nav-carousel {
         display: flex;
-        padding: 20px;
+        padding: 10px;
 
         & a {
             text-decoration: none;
             text-align: center;
             font-family: $fuente-secundaria;
-            font-size: 1.5rem;
+            font-size: 2rem;
             font-weight: bold;
             color: $color-secundario;
             background-color: $color-principal;
             opacity: .75;
             width: 50%;
         }
+    }
+
+    .d-block {
+        width: 80vw;
+        height: 90vh;
+        
     }
 }

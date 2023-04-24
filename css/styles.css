@@ -29,7 +29,7 @@ body {
   background-attachment: fixed;
   min-height: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   body {
     background: white;
     background-image: url(../img/back3.jpg);
@@ -93,7 +93,7 @@ li {
   color: white;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .nav-footer {
     text-align: center;
     display: flex;
@@ -159,7 +159,7 @@ h1 a {
   text-decoration: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   h1 a {
     font-size: 3rem;
   }
@@ -214,7 +214,7 @@ h1 a {
 
 .contenedor {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
   text-align: center;
 }
 .contenedor a {
@@ -244,24 +244,28 @@ h1 a {
   transform: translate(-50%, -50%);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .index-mobile {
     display: none;
   }
   #nav-carousel {
     display: flex;
-    padding: 20px;
+    padding: 10px;
   }
   #nav-carousel a {
     text-decoration: none;
     text-align: center;
     font-family: "spline";
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     color: white;
     background-color: black;
     opacity: 0.75;
     width: 50%;
+  }
+  .d-block {
+    width: 80vw;
+    height: 90vh;
   }
 }
 .presentacion {
@@ -404,7 +408,8 @@ h3 a {
   padding-right: 10px;
 }
 
-.video-nico1, .video-ana1 {
+.video-nico1,
+.video-ana1 {
   width: 40%;
 }
 
@@ -415,13 +420,14 @@ h3 a {
   padding: 5px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .galeria {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 2;
   }
-  .video-nico1, .video-ana1 {
+  .video-nico1,
+  .video-ana1 {
     padding: 20px;
     width: 200px;
     border-radius: 2em;
@@ -501,7 +507,7 @@ h3 a {
   padding-left: 10px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .tarjeta-preguntas {
     padding: 10px;
     display: grid;
@@ -545,7 +551,8 @@ h2 {
   text-align: center;
 }
 
-.formulario-contacto, .trans-mapa {
+.formulario-contacto,
+.trans-mapa {
   text-align: center;
 }
 
@@ -575,7 +582,7 @@ h2 {
   padding-left: 15px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .cuerpo-contacto {
     display: grid;
     grid-template-columns: 50% 50%;
