@@ -26,7 +26,6 @@
     & img {
         width: 90vw;
         margin: auto;
-        opacity: .50;
         padding-top: 5px;
         padding-bottom: 5px;
         
@@ -46,7 +45,7 @@
 
 
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
     .index-mobile {
         display: none;
     }

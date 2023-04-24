@@ -1,6 +1,8 @@
 .faqs {
     background-color: rgba(255, 255, 255, 0.288);
     padding: 10px;
+    color: $color-principal;
+
     & h2 {
         font-size: 2rem;
         padding: 10px;
@@ -9,7 +11,7 @@
         text-align: center;
     }
 
-    & h4{
+    & h4 {
         padding-left: 10px;
     }
 }
@@ -44,13 +46,13 @@
     padding-left: 10px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
     .tarjeta-preguntas {
         padding: 10px;
         display: grid;
         grid-template-columns: 3fr 100px;
         grid-template-rows: 2;
-}
+    }
 }
 
 @media (min-width: 800px) {

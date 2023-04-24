@@ -22,14 +22,19 @@
 }
 body {
   background: white;
+  background-image: url(../img/back4.jpeg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   min-height: 100%;
 }
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   body {
     background: white;
     background-image: url(../img/back3.jpg);
     background-size: 100%;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
@@ -234,7 +239,6 @@ h1 a {
 .contenedor img {
   width: 90vw;
   margin: auto;
-  opacity: 0.5;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -249,7 +253,7 @@ h1 a {
   transform: translate(-50%, -50%);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .index-mobile {
     display: none;
   }
@@ -273,6 +277,8 @@ h1 a {
   padding: 10px;
 }
 .presentacion h2 {
+  font-weight: bold;
+  color: black;
   font-size: 2em;
   text-align: center;
   display: flex;
@@ -284,7 +290,8 @@ h1 a {
   justify-content: center;
 }
 .presentacion p {
-  font-size: 0.8em;
+  color: black;
+  font-size: 1em;
   text-align: justify;
   padding: 15px;
   background-color: rgba(255, 255, 255, 0.288);
@@ -299,10 +306,12 @@ h1 a {
 }
 
 .cierre-pres {
+  color: black;
   font-family: "source";
   font-style: italic;
   text-align: center;
   padding: 20px;
+  font-size: 1.2em;
   background-color: rgba(255, 255, 255, 0.288);
 }
 
@@ -386,10 +395,12 @@ h1 a {
   }
 }
 .nombres-galeria {
+  color: black;
+  font-size: 2rem;
   font-family: "spline";
   font-style: italic;
   text-decoration: double;
-  padding-left: 25px;
+  padding-left: 30px;
   padding-top: 20px;
   padding-bottom: 15px;
 }
@@ -399,6 +410,7 @@ h3 a {
   color: black;
   display: flex;
   justify-content: end;
+  padding-right: 10px;
 }
 
 .video-nico1, .video-ana1 {
@@ -412,7 +424,7 @@ h3 a {
   padding: 5px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .galeria {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -431,19 +443,9 @@ h3 a {
 }
 
 .cuidados {
+  color: black;
   font-size: 2em;
-  padding-bottom: 20px;
-  padding-top: 10px;
-}
-
-section h3 a {
-  color: "black one";
-  font-size: 0.7em;
-  text-decoration: none;
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 20px;
-  padding-bottom: 30px;
+  padding: 20px;
 }
 
 .img-care1 {
@@ -455,6 +457,12 @@ section h3 a {
 .tarjeta-48 {
   padding: 20px;
 }
+.tarjeta-48 h3 {
+  color: black;
+}
+.tarjeta-48 ol, .tarjeta-48 ul {
+  color: black;
+}
 
 .btn-primary {
   background-color: black;
@@ -463,6 +471,7 @@ section h3 a {
 .faqs {
   background-color: rgba(255, 255, 255, 0.288);
   padding: 10px;
+  color: black;
 }
 .faqs h2 {
   font-size: 2rem;
@@ -501,7 +510,7 @@ section h3 a {
   padding-left: 10px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .tarjeta-preguntas {
     padding: 10px;
     display: grid;
@@ -516,6 +525,7 @@ section h3 a {
 }
 .contacto {
   background-color: rgba(255, 255, 255, 0.288);
+  color: black;
 }
 
 h2 {
@@ -541,7 +551,7 @@ h2 {
   padding: 20px;
 }
 .formulario-contacto h4 {
-  text-align: left;
+  text-align: center;
 }
 
 .formulario-contacto, .trans-mapa {
@@ -560,6 +570,10 @@ h2 {
   padding: 10px;
 }
 
+.exam {
+  width: 100%;
+}
+
 .trans {
   padding: 10px;
 }
@@ -567,9 +581,10 @@ h2 {
 .mapa {
   width: 100%;
   padding-right: 15px;
+  padding-left: 15px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .cuerpo-contacto {
     display: grid;
     grid-template-columns: 50% 50%;

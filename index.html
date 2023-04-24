@@ -10,6 +10,7 @@
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 
@@ -45,27 +46,32 @@
         <section class="container index-mobile">
             <div class="row">
                 <article class="contenedor">
-                    <img src="./img/index-tat.jpg" class="img-index" alt="imagen tatuadores">
+                    <img data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                        src="./img/index-tat.jpg" class="img-index" alt="imagen tatuadores">
                     <a class="txt-centrado" href="./pages/tatuadores.html">Tatuadores</a>
                 </article>
 
                 <article class="contenedor">
-                    <img src="./img/index-galeria.jpg" class="img-index" alt="imagen galeria">
+                    <img data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
+                    data-aos-duration="500" src="./img/index-galeria.jpg" class="img-index" alt="imagen galeria">
                     <a class="txt-centrado" href="./pages/galeria.html">Galería</a>
                 </article>
 
                 <article class="contenedor">
-                    <img src="./img/index-cuidados.jpg" class="img-index" alt="imagen cuidados">
+                    <img data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                        src="./img/index-cuidados.jpg" class="img-index" alt="imagen cuidados">
                     <a class="txt-centrado" href="./pages/cuidados.html">Cuidados</a>
                 </article>
 
                 <article class="contenedor">
-                    <img src="./img/index-faqs.jpg" class="img-index" alt="imagen preguntas">
+                    <img data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
+                        data-aos-duration="500" src="./img/index-faqs.jpg" class="img-index" alt="imagen preguntas">
                     <a class="txt-centrado" href="./pages/preguntas-frecuentes.html">Preguntas Frecuentes</a>
                 </article>
 
                 <article class="contenedor">
-                    <img src="./img/index-contacto.jpg" class="img-index" alt="imagen contacto">
+                    <img data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                        src="./img/index-contacto.jpg" class="img-index" alt="imagen contacto">
                     <a class="txt-centrado" href="./pages/contacto.html">Contacto</a>
                 </article>
             </div>
@@ -129,7 +135,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
         crossorigin="anonymous"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

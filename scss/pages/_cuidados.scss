@@ -3,20 +3,9 @@
 }
 
 .cuidados {
+    color: $color-principal;
     font-size: 2em;
-    padding-bottom: 20px;
-    padding-top: 10px;
-}
-
-
-section h3 a {
-    color: $fuente-principal;
-    font-size: 0.7em;
-    text-decoration: none;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 20px;
-    padding-bottom: 30px;
+    padding: 20px;
 }
 
 .img-care1 {
@@ -27,6 +16,13 @@ section h3 a {
 
 .tarjeta-48 {
     padding: 20px;
+
+    & h3 {
+        color: $color-principal;
+    }
+    ol,ul {
+        color: $color-principal;
+    }
 }
 
 .btn-primary {

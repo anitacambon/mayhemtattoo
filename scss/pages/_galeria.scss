@@ -1,8 +1,10 @@
 .nombres-galeria {
+    color: $color-principal;
+    font-size: 2rem;
     font-family: $fuente-secundaria;
     font-style: italic;
     text-decoration: double;
-    padding-left: 25px;
+    padding-left: 30px;
     padding-top: 20px;
     padding-bottom: 15px;
 }
@@ -12,6 +14,7 @@ h3 a {
     color: $color-principal;
     display: flex;
     justify-content: end;
+    padding-right: 10px;
 }
 
 .video-nico1,.video-ana1 {
@@ -25,7 +28,7 @@ h3 a {
     padding: 5px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
 
     .galeria {
         display: grid;
