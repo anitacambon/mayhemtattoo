@@ -17,7 +17,8 @@ h3 a {
     padding-right: 10px;
 }
 
-.video-nico1,.video-ana1 {
+.video-nico1,
+.video-ana1 {
     width: 40%;
 }
 
@@ -28,7 +29,7 @@ h3 a {
     padding: 5px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 
     .galeria {
         display: grid;
@@ -36,7 +37,8 @@ h3 a {
         grid-template-rows: 2;
     }
 
-    .video-nico1,.video-ana1 {
+    .video-nico1,
+    .video-ana1 {
         padding: 20px;
         width: 200px;
         border-radius: 2em;

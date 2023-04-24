@@ -26,11 +26,12 @@ h2 {
     padding: 20px;
 
     & h4 {
-    text-align: center;
-}
+        text-align: center;
+    }
 }
 
-.formulario-contacto,.trans-mapa{
+.formulario-contacto,
+.trans-mapa {
     text-align: center;
 }
 
@@ -62,7 +63,7 @@ h2 {
     padding-left: 15px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .cuerpo-contacto {
         display: grid;
         grid-template-columns: 50% 50%;

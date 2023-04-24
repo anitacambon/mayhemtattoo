@@ -12,7 +12,7 @@
     display: inline-block;
     text-align: center;
 
-    & a{
+    & a {
         text-decoration: none;
         font-family: $fuente-secundaria;
         font-size: 1.5rem;
@@ -28,9 +28,9 @@
         margin: auto;
         padding-top: 5px;
         padding-bottom: 5px;
-        
-        
-        &:hover{
+
+
+        &:hover {
             opacity: .80;
         }
     }
@@ -45,7 +45,7 @@
 
 
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .index-mobile {
         display: none;
     }
@@ -54,7 +54,7 @@
         display: flex;
         padding: 20px;
 
-        & a{
+        & a {
             text-decoration: none;
             text-align: center;
             font-family: $fuente-secundaria;
