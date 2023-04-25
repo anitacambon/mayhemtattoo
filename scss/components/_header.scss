@@ -14,7 +14,7 @@ header {
 h1 a {
     color: $color-secundario;
     font-family: $fuente-principal;
-    font-size: 2rem;
+    font-size: 2.3em;
     text-align: center;
     text-decoration: none;
     display: flex;
@@ -27,20 +27,18 @@ h1 a {
 }
 
 .bi-list {
-    font-size: 1.5em;
+    font-size: 3em;
     color: $color-secundario;
     display: inline-flex;
     justify-content: space-between;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .bi-instagram {
-    font-size: 1.2em;
+    font-size: 2.8em;
     color: $color-secundario;
     display: flex;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+    padding-right: 20px;
 }
 
 .insta-tablet {

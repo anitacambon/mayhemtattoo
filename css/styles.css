@@ -27,7 +27,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  min-height: 100%;
 }
 @media (min-width: 1024px) {
   body {
@@ -38,6 +37,10 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
+}
+
+main {
+  min-height: 100%;
 }
 
 h2,
@@ -118,7 +121,7 @@ header {
 h1 a {
   color: white;
   font-family: "black one";
-  font-size: 2rem;
+  font-size: 2.3em;
   text-align: center;
   text-decoration: none;
   display: flex;
@@ -131,20 +134,18 @@ h1 a {
 }
 
 .bi-list {
-  font-size: 1.5em;
+  font-size: 3em;
   color: white;
   display: inline-flex;
   justify-content: space-between;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 .bi-instagram {
-  font-size: 1.2em;
+  font-size: 2.8em;
   color: white;
   display: flex;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
+  padding-right: 20px;
 }
 
 .insta-tablet {
