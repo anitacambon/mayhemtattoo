@@ -4,7 +4,7 @@
     color: $color-principal;
 
     & h2 {
-        font-size: 2rem;
+        font-size: 3em;
         padding: 10px;
         display: flex;
         justify-content: center;
@@ -12,6 +12,7 @@
     }
 
     & h4 {
+        font-size: 2em;
         padding-left: 10px;
     }
 }
@@ -25,7 +26,11 @@
     grid-template-rows: 2;
 
     & h3 {
-        font-size: 1.5rem;
+        font-size: 2em;
+    }
+
+    & p {
+        font-size: 1.5em;
     }
 
     & a {
