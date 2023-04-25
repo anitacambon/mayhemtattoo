@@ -20,27 +20,24 @@
   font-family: "play";
   src: url(../fonts/play-regular.ttf);
 }
-body {
+main {
+  min-height: 100%;
   background: white;
   background-image: url(../img/back4.jpeg);
   background-size: 100%;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 @media (min-width: 1024px) {
-  body {
+  main {
     background: white;
     background-image: url(../img/back3.jpg);
     background-size: 100%;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
-}
-
-main {
-  min-height: 100%;
 }
 
 h2,
@@ -267,6 +264,9 @@ h1 a {
   .d-block {
     width: 80vw;
     height: 90vh;
+  }
+  .carousel-item img {
+    width: 90%;
   }
 }
 .presentacion {
