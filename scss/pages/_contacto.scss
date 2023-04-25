@@ -7,12 +7,12 @@ h2 {
     display: block;
     justify-content: center;
     padding: 15px;
-    font-size: 2rem;
+    font-size: 2.2em;
 }
 
 .contacto h3 {
     font-family: $fuente-terciaria;
-    font-size: 1.6rem;
+    font-size: 1.8em;
     text-align: center;
     padding: 15px;
 }
@@ -27,6 +27,8 @@ h2 {
 
     & h4 {
         text-align: center;
+        font-size: 1.8em;
+        font-weight: bolder;
     }
 }
 
@@ -51,12 +53,22 @@ h2 {
 
 .exam {
     width: 100%;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 .trans {
-    font-size: 1.2rem;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.288)
+    background-color: rgba(255, 255, 255, 0.411);
+    padding-right: 15px;
+    & h4 {
+        font-size: 1.8em;
+        font-weight: bolder;
+    }
+    & ul {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
 }
 
 .mapa {

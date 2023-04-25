@@ -61,7 +61,7 @@ h1 a {
 
 @media (min-width: 1024px) {
     h1 a {
-        font-size: 3rem;
+        font-size: 1.8em;
     }
 
     .bi-list {
@@ -79,7 +79,7 @@ h1 a {
 
     .insta-tablet {
         font-family: $fuente-secundaria;
-        font-size: 1rem;
+        font-size: 1em;
         color: $color-secundario;
         font-weight: bold;
         display: flex;
@@ -102,7 +102,7 @@ h1 a {
 
     .nav-item a {
         font-family: "play";
-        font-size: 90%;
+        font-size: 95%;
         text-decoration: none;
         color: gray;
         gap: 10px;
