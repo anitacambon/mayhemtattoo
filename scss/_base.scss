@@ -41,7 +41,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: 100%;
 
     @media (min-width: 1024px) {
         background: $color-secundario;
@@ -51,6 +50,10 @@ body {
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
+}
+
+main {
+    min-height: 100%;
 }
 
 h2,
