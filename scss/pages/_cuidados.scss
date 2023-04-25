@@ -4,7 +4,7 @@
 
 .cuidados {
     color: $color-principal;
-    font-size: 2em;
+    font-size: 2.5em;
     padding: 20px;
 }
 
@@ -12,6 +12,10 @@
     display: flex;
     justify-content: center;
     padding: 10px;
+
+    & img {
+        width: 400px;
+    }
 }
 
 .tarjeta-48 {
@@ -22,6 +26,7 @@
     }
     ol,ul {
         color: $color-principal;
+        font-size: 1.8em;
     }
 }
 

@@ -60,13 +60,13 @@ li {
 
 .caja-footer {
   position: relative;
-  bottom: 0px;
+  bottom: 0vh;
   text-align: center;
   background-color: black;
 }
 
 .nav-footer {
-  font-size: 0.8rem;
+  font-size: 1.3em;
   color: #aaaaaa;
   list-style: none;
   padding-top: 10px;
@@ -82,7 +82,7 @@ li {
 }
 
 .contacto-footer {
-  font-size: 0.8rem;
+  font-size: 1.2em;
   color: white;
   display: flex;
   justify-content: space-around;
@@ -97,6 +97,7 @@ li {
 @media (min-width: 1024px) {
   .nav-footer {
     text-align: center;
+    font-size: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,7 +164,7 @@ h1 a {
 
 @media (min-width: 1024px) {
   h1 a {
-    font-size: 3rem;
+    font-size: 1.8em;
   }
   .bi-list {
     display: none;
@@ -176,7 +177,7 @@ h1 a {
   }
   .insta-tablet {
     font-family: "spline";
-    font-size: 1rem;
+    font-size: 1em;
     color: white;
     font-weight: bold;
     display: flex;
@@ -196,7 +197,7 @@ h1 a {
   }
   .nav-item a {
     font-family: "play";
-    font-size: 90%;
+    font-size: 95%;
     text-decoration: none;
     color: gray;
     gap: 10px;
@@ -222,7 +223,7 @@ h1 a {
 .contenedor a {
   text-decoration: none;
   font-family: "spline";
-  font-size: 1.5rem;
+  font-size: 2em;
   font-weight: bold;
   color: white;
   background-color: black;
@@ -258,7 +259,7 @@ h1 a {
     text-decoration: none;
     text-align: center;
     font-family: "spline";
-    font-size: 2rem;
+    font-size: 2em;
     font-weight: bold;
     color: white;
     background-color: black;
@@ -291,7 +292,7 @@ h1 a {
 }
 .presentacion p {
   color: black;
-  font-size: 1em;
+  font-size: 1.5em;
   text-align: justify;
   padding: 15px;
   background-color: rgba(255, 255, 255, 0.288);
@@ -311,7 +312,7 @@ h1 a {
   font-style: italic;
   text-align: center;
   padding: 20px;
-  font-size: 1.2em;
+  font-size: 1.5em;
   background-color: rgba(255, 255, 255, 0.288);
 }
 
@@ -391,13 +392,14 @@ h1 a {
 
 .nombres-galeria {
   color: black;
-  font-size: 2rem;
+  font-size: 3em;
   font-family: "spline";
   font-style: italic;
   text-decoration: double;
   padding-left: 30px;
   padding-top: 20px;
   padding-bottom: 15px;
+  text-align: center;
 }
 
 h3 a {
@@ -441,7 +443,7 @@ h3 a {
 
 .cuidados {
   color: black;
-  font-size: 2em;
+  font-size: 2.5em;
   padding: 20px;
 }
 
@@ -449,6 +451,9 @@ h3 a {
   display: flex;
   justify-content: center;
   padding: 10px;
+}
+.img-care1 img {
+  width: 400px;
 }
 
 .tarjeta-48 {
@@ -459,6 +464,7 @@ h3 a {
 }
 .tarjeta-48 ol, .tarjeta-48 ul {
   color: black;
+  font-size: 1.8em;
 }
 
 .btn-primary {
@@ -529,12 +535,12 @@ h2 {
   display: block;
   justify-content: center;
   padding: 15px;
-  font-size: 2rem;
+  font-size: 2.2em;
 }
 
 .contacto h3 {
   font-family: "source sans";
-  font-size: 1.6rem;
+  font-size: 1.8em;
   text-align: center;
   padding: 15px;
 }
@@ -549,6 +555,8 @@ h2 {
 }
 .formulario-contacto h4 {
   text-align: center;
+  font-size: 1.8em;
+  font-weight: bolder;
 }
 
 .formulario-contacto,
@@ -570,12 +578,22 @@ h2 {
 
 .exam {
   width: 100%;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 .trans {
-  font-size: 1.2rem;
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.288);
+  background-color: rgba(255, 255, 255, 0.411);
+  padding-right: 15px;
+}
+.trans h4 {
+  font-size: 1.8em;
+  font-weight: bolder;
+}
+.trans ul {
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 .mapa {
