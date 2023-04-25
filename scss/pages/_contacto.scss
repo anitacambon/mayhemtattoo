@@ -7,12 +7,12 @@ h2 {
     display: block;
     justify-content: center;
     padding: 15px;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .contacto h3 {
     font-family: $fuente-terciaria;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     text-align: center;
     padding: 15px;
 }
@@ -54,13 +54,14 @@ h2 {
 }
 
 .trans {
+    font-size: 1.2rem;
     padding: 10px;
+    background-color: rgba(255, 255, 255, 0.288)
 }
 
 .mapa {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 15px;
 }
 
 @media (min-width: 1024px) {
