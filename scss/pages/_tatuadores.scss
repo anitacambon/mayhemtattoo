@@ -26,7 +26,7 @@
 }
 
 .foto-ani-pres,.foto-nico-pres {
-    width: auto;
+    max-width: 440px;
 }
 
 .comentarios {
@@ -118,10 +118,6 @@
     grid-column: 1/3;
 }
 
-@media (min-width: 990px) {
-    .foto-ani-pres {
-        width: 444px;
-    }
-}
+
 
 
