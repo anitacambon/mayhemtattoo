@@ -37,7 +37,8 @@ $color-terciario: #fd0901;
 main {
     min-height: 100vh;
     background-image: url(../img/back4.jpeg);
-    background-size: 100%;
+    background-size: 100vh;
+    background-size: 100vw;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
