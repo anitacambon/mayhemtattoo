@@ -14,12 +14,16 @@ header {
 h1 a {
     color: $color-secundario;
     font-family: $fuente-principal;
-    font-size: 2.3em;
+    font-size: 1.8em;
     text-align: center;
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .nav {
@@ -27,19 +31,20 @@ h1 a {
 }
 
 .bi-list {
-    font-size: 3em;
+    font-size: 3.5em;
     color: $color-secundario;
     display: inline-flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-left: 20px;
+    padding-top: 30px;
 }
 
 .bi-instagram {
-    font-size: 2.8em;
+    font-size: 3em;
     color: $color-secundario;
     display: flex;
     padding-right: 20px;
-
+    padding-top: 20px;
 }
 
 .insta-tablet {
@@ -54,8 +59,10 @@ h1 a {
         text-decoration: none;
     }
 
-    & li {
+    & .dropdown-item {
         font-size: 2em;
+        font-weight: bold;
+        background-color: $color-secundario;
     }
 }
 
