@@ -42,7 +42,8 @@ main {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
 
     @media (min-width: 1024px) {
         min-height: 100vh;
@@ -51,7 +52,8 @@ main {
         background-position: center center;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        overflow: hidden;
+        overflow-y: hidden;
+        overflow-x: hidden;
     }
 }
 
