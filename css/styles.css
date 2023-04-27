@@ -20,8 +20,8 @@
   font-family: "play";
   src: url(../fonts/play-regular.ttf);
 }
-main {
-  min-height: auto;
+body {
+  min-height: 100vh;
   background-image: url(../img/back4.jpeg);
   background-size: 100%;
   background-position: center center;
@@ -30,7 +30,7 @@ main {
   overflow-y: hidden;
 }
 @media (min-width: 1024px) {
-  main {
+  body {
     min-height: 100vh;
     background-image: url(../img/back3.jpg);
     background-size: 100%;
@@ -42,7 +42,7 @@ main {
 }
 
 .scroll-vert {
-  min-height: 100vh;
+  min-height: 100;
 }
 
 h2,
