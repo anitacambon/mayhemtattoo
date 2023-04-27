@@ -17,11 +17,12 @@
     }
 
     & p {
+        font-weight: 500;
         color: $color-principal;
         font-size: 1.5em;
         text-align: justify;
         padding: 15px;
-        background-color: rgba(255, 255, 255, 0.288);
+        background-color: rgba(255, 255, 255, 0.575);
     }
 }
 
@@ -30,7 +31,7 @@
 }
 
 .comentarios {
-    background-color: rgba(255, 255, 255, 0.288);
+    background-color: rgba(255, 255, 255, 0.575);
 }
 .cierre-pres {
     color: $color-principal;
@@ -39,7 +40,8 @@
     text-align: center;
     padding: 20px;
     font-size: 1.5em;
-    background-color: rgba(255, 255, 255, 0.288);
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.575);
 }
 
 
