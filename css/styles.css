@@ -23,13 +23,11 @@
 main {
   min-height: 100vh;
   background-image: url(../img/back4.jpeg);
-  background-size: 100vh;
-  background-size: 100vw;
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   overflow-y: hidden;
-  overflow-x: hidden;
 }
 @media (min-width: 1024px) {
   main {
@@ -39,8 +37,7 @@ main {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    overflow: hidden;
   }
 }
 
@@ -192,8 +189,8 @@ h1 a {
     color: white;
     font-weight: bold;
     display: flex;
-    padding-bottom: 10px;
-    padding-right: 5px;
+    padding: 10px;
+    padding-top: 30px;
   }
   .header-insta {
     display: flex;
@@ -461,10 +458,11 @@ h3 a {
 .img-care1 {
   display: flex;
   justify-content: center;
-  padding: 10px;
+  padding: 20px;
 }
 .img-care1 img {
-  width: 400px;
+  width: 450px;
+  height: 450px;
 }
 
 .tarjeta-48 {
@@ -473,9 +471,13 @@ h3 a {
 .tarjeta-48 h3 {
   color: black;
 }
-.tarjeta-48 ol, .tarjeta-48 ul {
+.tarjeta-48 ol,
+.tarjeta-48 ul {
   color: black;
   font-size: 1.8em;
+}
+.tarjeta-48 .btn-primary {
+  font-size: 1.7em;
 }
 
 .btn-primary {
@@ -502,7 +504,7 @@ h3 a {
 .tarjeta-preguntas {
   padding: 15px;
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 4fr 1fr;
   grid-template-rows: 2;
 }
 .tarjeta-preguntas h3 {
@@ -516,16 +518,13 @@ h3 a {
   color: black;
   font-weight: bold;
 }
-
-.bi-person-plus,
-.bi-chat-left-dots-fill,
-.bi-droplet,
-.bi-coin {
+.tarjeta-preguntas i {
   font-size: 5em;
   display: grid;
   grid-row: 1/3;
   grid-column: 2/3;
   padding-left: 10px;
+  text-align: center;
 }
 
 @media (min-width: 1024px) {
