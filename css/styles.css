@@ -21,6 +21,7 @@
   src: url(../fonts/play-regular.ttf);
 }
 main {
+  min-height: auto;
   background-image: url(../img/back4.jpeg);
   background-size: 100%;
   background-position: center center;
