@@ -21,7 +21,7 @@
   src: url(../fonts/play-regular.ttf);
 }
 main {
-  min-height: 100vh;
+  min-height: 100;
   background-image: url(../img/back4.jpeg);
   background-size: 100%;
   background-position: center center;
@@ -39,6 +39,10 @@ main {
     background-attachment: fixed;
     overflow: hidden;
   }
+}
+
+.scroll-vert {
+  min-height: 100vh;
 }
 
 h2,
