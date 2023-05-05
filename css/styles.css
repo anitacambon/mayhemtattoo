@@ -423,7 +423,7 @@ h3 a {
 .galeria {
   display: grid;
   grid-template-columns: 1;
-  grid-template-rows: 40% 20% 20% 20%;
+  grid-template-rows: 1fr 2fr;
 }
 .galeria .video-nico1,
 .galeria .video-ana1 {
