@@ -27,28 +27,22 @@ h2 {
 
     & h4 {
         text-align: center;
-        font-size: 1.8em;
+        font-size: 2em;
         font-weight: bolder;
+    }
+
+    & div {
+        padding: 10px;
+        font-size: 1.6em;
+        width: 50vw;
+        border: 2px #333;
+        border-radius: 5px;
     }
 }
 
 .formulario-contacto,
 .trans-mapa {
     text-align: center;
-}
-
-.espacio {
-    padding: 20px;
-    width: auto;
-
-    &-boton {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
-    &-texto {
-        padding: 10px;
-    }
 }
 
 .exam {
@@ -61,10 +55,12 @@ h2 {
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.411);
     padding-right: 15px;
+
     & h4 {
         font-size: 1.8em;
         font-weight: bolder;
     }
+
     & ul {
         font-size: 1.5em;
         font-weight: bold;
@@ -72,8 +68,8 @@ h2 {
 }
 
 .mapa {
-    width: 100%;
-    height: 75%;
+    width: 90%;
+    height: 100%;
     padding: 15px;
 }
 
@@ -83,5 +79,9 @@ h2 {
         grid-template-columns: 50% 50%;
         grid-template-rows: 50%;
         padding-bottom: 20px;
+    }
+
+    .espacio {
+        width: 40vw;
     }
 }
