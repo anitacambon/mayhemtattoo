@@ -21,22 +21,20 @@
   src: url(../fonts/play-regular.ttf);
 }
 main {
-  max-height: 100vh;
+  min-height: 100vh;
   background-image: url(../img/back4.jpeg);
   background-size: 100%;
   background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-repeat: repeat-y;
   overflow-y: hidden;
 }
 @media (min-width: 1024px) {
   main {
     min-height: 100vh;
-    background-image: url(../img/back3.jpg);
+    background-image: url(../img/back3_grande.jpg);
     background-size: 100%;
     background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-repeat: repeat-y;
     overflow: hidden;
   }
 }
@@ -120,7 +118,7 @@ header {
 h1 a {
   color: white;
   font-family: "black one";
-  font-size: 1.8em;
+  font-size: 1.6em;
   text-align: center;
   text-decoration: none;
   display: flex;
@@ -137,7 +135,7 @@ h1 a {
 }
 
 .bi-list {
-  font-size: 3.5em;
+  font-size: 3em;
   color: white;
   display: inline-flex;
   justify-content: space-around;
@@ -146,7 +144,7 @@ h1 a {
 }
 
 .bi-instagram {
-  font-size: 3em;
+  font-size: 2.7em;
   color: white;
   display: flex;
   padding-right: 20px;
@@ -164,7 +162,9 @@ h1 a {
 .header-insta a {
   text-decoration: none;
 }
-.header-insta .dropdown-item {
+.header-insta ul li a {
+  text-decoration: none;
+  color: black;
   font-size: 2em;
   font-weight: bold;
   background-color: white;
@@ -420,14 +420,18 @@ h3 a {
   padding-right: 10px;
 }
 
-.video-nico1,
-.video-ana1 {
+.galeria {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 40% 20% 20% 20%;
+}
+.galeria .video-nico1,
+.galeria .video-ana1 {
   width: 40%;
 }
-
-.img-tat {
+.galeria .img-tat {
   border-radius: 1.5em;
-  width: 30%;
+  width: 40%;
   gap: 10px;
   padding: 5px;
 }
@@ -435,13 +439,13 @@ h3 a {
 @media (min-width: 1024px) {
   .galeria {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 3fr;
     grid-template-rows: 2;
   }
-  .video-nico1,
-  .video-ana1 {
+  .galeria .video-nico1,
+  .galeria .video-ana1 {
     padding: 20px;
-    width: 200px;
+    width: 50vw;
     border-radius: 2em;
     display: grid;
     grid-column: span 2;
@@ -571,25 +575,20 @@ h2 {
 }
 .formulario-contacto h4 {
   text-align: center;
-  font-size: 1.8em;
+  font-size: 2em;
   font-weight: bolder;
+}
+.formulario-contacto div {
+  padding: 10px;
+  font-size: 1.6em;
+  width: 50vw;
+  border: 2px #333;
+  border-radius: 5px;
 }
 
 .formulario-contacto,
 .trans-mapa {
   text-align: center;
-}
-
-.espacio {
-  padding: 20px;
-  width: auto;
-}
-.espacio-boton {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.espacio-texto {
-  padding: 10px;
 }
 
 .exam {
@@ -613,8 +612,8 @@ h2 {
 }
 
 .mapa {
-  width: 100%;
-  height: 75%;
+  width: 90%;
+  height: 100%;
   padding: 15px;
 }
 
@@ -624,6 +623,9 @@ h2 {
     grid-template-columns: 50% 50%;
     grid-template-rows: 50%;
     padding-bottom: 20px;
+  }
+  .espacio {
+    width: 40vw;
   }
 }
 

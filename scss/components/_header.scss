@@ -14,7 +14,7 @@ header {
 h1 a {
     color: $color-secundario;
     font-family: $fuente-principal;
-    font-size: 1.8em;
+    font-size: 1.6em;
     text-align: center;
     text-decoration: none;
     display: flex;
@@ -31,7 +31,7 @@ h1 a {
 }
 
 .bi-list {
-    font-size: 3.5em;
+    font-size: 3em;
     color: $color-secundario;
     display: inline-flex;
     justify-content: space-around;
@@ -40,7 +40,7 @@ h1 a {
 }
 
 .bi-instagram {
-    font-size: 3em;
+    font-size: 2.7em;
     color: $color-secundario;
     display: flex;
     padding-right: 20px;
@@ -59,7 +59,9 @@ h1 a {
         text-decoration: none;
     }
 
-    & .dropdown-item {
+    & ul li a{
+        text-decoration: none;
+        color: $color-principal;
         font-size: 2em;
         font-weight: bold;
         background-color: $color-secundario;
