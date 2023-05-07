@@ -20,68 +20,125 @@ h2 {
 .cuerpo-contacto {
     display: grid;
     justify-content: center;
-}
-
-.formulario-contacto {
-    padding: 20px;
-
-    & h4 {
-        text-align: center;
-        font-size: 2em;
-        font-weight: bolder;
-    }
-
-    & div {
-        padding: 10px;
-        font-size: 1.6em;
-        width: 50vw;
-        border: 2px #333;
-        border-radius: 5px;
-    }
-}
-
-.formulario-contacto,
-.trans-mapa {
     text-align: center;
-}
 
-.exam {
-    width: 100%;
-    font-size: 1.2em;
-    font-weight: bold;
-}
+    & .formulario-contacto {
+        display: grid;
+        justify-content: center;
+        padding: 20px;
 
-.trans {
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.411);
-    padding-right: 15px;
+        & h4 {
+            text-align: center;
+            font-size: 2em;
+            font-weight: bolder;
+        }
 
-    & h4 {
-        font-size: 1.8em;
-        font-weight: bolder;
+        & div {
+            padding: 10px;
+        }
+
+        & .espacio {
+            font-size: 1.6em;
+            width: 70vw;
+            border: 1px solid #333;
+            border-radius: 5px;
+        }
+
+        & .exam, .exam-idea {
+            width: 70vw;
+            font-size: 1.6em;
+            font-weight: bold;
+        }
+
+        & #formFile,
+        #comentarios {
+            font-size: 1.6em;
+            width: 70vw;
+            border: 1px solid #333;
+            border-radius: 5px;
+        }
+
+        & .env-limp {
+            font-size: 1.6em;
+        }
     }
 
-    & ul {
-        font-size: 1.5em;
-        font-weight: bold;
-    }
-}
+    .trans {
+        display: inline-block;
+        justify-content: center;
+        width: 70vw;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.411);
+        border-radius: 20px;
 
-.mapa {
-    width: 90%;
-    height: 100%;
-    padding: 15px;
+        & h4 {
+            font-size: 1.8em;
+            font-weight: bolder;
+        }
+
+        & ul {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+    }
+
+    & .mapa {
+        width: 90vw;
+        height: 50vh;
+        padding: 15px;
+    }
 }
 
 @media (min-width: 1024px) {
-    .cuerpo-contacto {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 50%;
-        padding-bottom: 20px;
-    }
+    .contacto {
+        h3 {
+            font-weight: bold;
+        }
 
-    .espacio {
-        width: 40vw;
+        .cuerpo-contacto {
+            display: grid;
+            grid-template-columns: 40% 50%;
+            grid-template-rows: 50%;
+            padding-bottom: 20px;
+
+            & .formulario-contacto {
+                border-radius: 20px;
+                background-color: rgba(255, 255, 255, 0.411);
+
+                & .espacio {
+                    width: 40vw;
+                }
+
+                & #formFile,
+                #comentarios {
+                    width: 40vw;
+                }
+
+                & .exam-idea {
+                    width: 40vw;
+                }
+            }
+
+            .trans {
+                width: 40vw;
+                text-align: center;
+
+                & h4 {
+                    font-size: 1.4em;
+                    font-weight: bolder;
+                }
+
+                & ul {
+                    font-size: 1.3em;
+                    font-weight: bold;
+                }
+            }
+
+            & .mapa {
+                width: 40vw;
+                height: 50vh;
+                padding: 15px;
+            }
+        }
     }
 }

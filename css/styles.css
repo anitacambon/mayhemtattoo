@@ -135,7 +135,7 @@ h1 a {
 }
 
 .bi-list {
-  font-size: 3em;
+  font-size: 3.5em;
   color: white;
   display: inline-flex;
   justify-content: space-around;
@@ -440,15 +440,13 @@ h3 a {
   .galeria {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 2;
+    grid-template-rows: min-content;
   }
   .galeria .video-nico1,
   .galeria .video-ana1 {
     padding: 20px;
     width: 50vw;
     border-radius: 2em;
-    display: grid;
-    grid-column: span 2;
   }
 }
 .back-cuidados {
@@ -568,64 +566,104 @@ h2 {
 .cuerpo-contacto {
   display: grid;
   justify-content: center;
+  text-align: center;
 }
-
-.formulario-contacto {
+.cuerpo-contacto .formulario-contacto {
+  display: grid;
+  justify-content: center;
   padding: 20px;
 }
-.formulario-contacto h4 {
+.cuerpo-contacto .formulario-contacto h4 {
   text-align: center;
   font-size: 2em;
   font-weight: bolder;
 }
-.formulario-contacto div {
+.cuerpo-contacto .formulario-contacto div {
   padding: 10px;
+}
+.cuerpo-contacto .formulario-contacto .espacio {
   font-size: 1.6em;
-  width: 50vw;
-  border: 2px #333;
+  width: 70vw;
+  border: 1px solid #333;
   border-radius: 5px;
 }
-
-.formulario-contacto,
-.trans-mapa {
-  text-align: center;
-}
-
-.exam {
-  width: 100%;
-  font-size: 1.2em;
+.cuerpo-contacto .formulario-contacto .exam, .cuerpo-contacto .formulario-contacto .exam-idea {
+  width: 70vw;
+  font-size: 1.6em;
   font-weight: bold;
 }
-
-.trans {
+.cuerpo-contacto .formulario-contacto #formFile,
+.cuerpo-contacto .formulario-contacto #comentarios {
+  font-size: 1.6em;
+  width: 70vw;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+.cuerpo-contacto .formulario-contacto .env-limp {
+  font-size: 1.6em;
+}
+.cuerpo-contacto .trans {
+  display: inline-block;
+  justify-content: center;
+  width: 70vw;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.411);
-  padding-right: 15px;
+  border-radius: 20px;
 }
-.trans h4 {
+.cuerpo-contacto .trans h4 {
   font-size: 1.8em;
   font-weight: bolder;
 }
-.trans ul {
+.cuerpo-contacto .trans ul {
   font-size: 1.5em;
   font-weight: bold;
 }
-
-.mapa {
-  width: 90%;
-  height: 100%;
+.cuerpo-contacto .mapa {
+  width: 90vw;
+  height: 50vh;
   padding: 15px;
 }
 
 @media (min-width: 1024px) {
-  .cuerpo-contacto {
+  .contacto h3 {
+    font-weight: bold;
+  }
+  .contacto .cuerpo-contacto {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 50%;
     grid-template-rows: 50%;
     padding-bottom: 20px;
   }
-  .espacio {
+  .contacto .cuerpo-contacto .formulario-contacto {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.411);
+  }
+  .contacto .cuerpo-contacto .formulario-contacto .espacio {
     width: 40vw;
+  }
+  .contacto .cuerpo-contacto .formulario-contacto #formFile,
+  .contacto .cuerpo-contacto .formulario-contacto #comentarios {
+    width: 40vw;
+  }
+  .contacto .cuerpo-contacto .formulario-contacto .exam-idea {
+    width: 40vw;
+  }
+  .contacto .cuerpo-contacto .trans {
+    width: 40vw;
+    text-align: center;
+  }
+  .contacto .cuerpo-contacto .trans h4 {
+    font-size: 1.4em;
+    font-weight: bolder;
+  }
+  .contacto .cuerpo-contacto .trans ul {
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  .contacto .cuerpo-contacto .mapa {
+    width: 40vw;
+    height: 50vh;
+    padding: 15px;
   }
 }
 
